@@ -5,9 +5,9 @@
 }
 
 a {
+  display: block;
   text-decoration: none;
   font-size: 18px;
-  color: black;
 }
 
 li {
@@ -30,23 +30,25 @@ ul {
   margin-top: 30px;
 }
 
-ul > li {
+ul li {
   display: block;
-  border: 1px solid white;
   width: 25%;
   margin: 10px auto;
-  padding: 10px 20px;
-  background-color: grey;
-  color: black;
+  background-color: goldenrod;
+  color: white;
   border-radius: 5px;
 }
 
-ul > li:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
+ul li a {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fff;
 }
 
-ul > li > a {
-  display: block;
+ul li a:hover {
+  cursor: pointer;
+  background-color: white;
+  border-color: goldenrod;
+  color: goldenrod;
 }
